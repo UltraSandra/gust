@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "nav_font";
+    src: url('font/font1.ttf')
+}
+
+body {
+    background: linear-gradient(to bottom, black 25%, darkred);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+header {
+    background-image: url('slike/a.png');
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#logo {
+    float: left;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    flex: 1 1 100%;
+    text-align: center;
+    padding: 16px 26px;
+    text-decoration: none;
+    font-size: 26px;
+    color: black;
+    font-weight: bold;
+    font-family: "nav_font";
+}
+
+nav a:hover {
+    background-color: rgba(138, 18, 18, 0.747);
+    border-radius: 22px;
+}
+
+h1 {
+    margin-block-end: 20px;
+    font-family: 'font1';
+    color: rgb(178, 190, 81);
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 100px;
+    font-weight: 800;
+    text-shadow: 3px 3px rgb(3, 53, 24);
+    margin-block-start: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+}
+
+.sadrzaj {
+    margin: auto;
+    max-width: 80%;
+    margin-block-start: 102px;
+
+}
+.sadrzaj h1{
+    font-size: 62px;
+}
+#dugme{
+    display: none;
+}
+.napitak{
+    margin-bottom: 2%;
+    flex:0 0 20%;
+
+}
+.napitak img{
+    max-width: 100%;
+   
+
+}
+@media only screen and (max-width: 700px) {
+    nav {
+        flex-direction:column;
+        background-color: rgba(178, 190, 81, 0.747);
+        display: none;
+    }
+    nav a {
+        border: 1px rgba(3, 2, 2, 0.575) double;
+        border-collapse: collapse;
+        flex: 50%;
+    }
+    #logo {
+        float: left;
+    }
+    h1 {
+        margin-block-start: 60px;
+    }
+#dugme{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+.napitak{flex: 100%;
+}
+}

@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'font1';
+    src: url('font/font1.ttf');
+}
+
+.sadrzaj p {
+    letter-spacing: 1px;
+    line-height: 1.1;
+    font-family: cursive, serif;
+    font-weight: 550;
+    text-align: center;
+    border: black 2px groove;
+    border-radius: 10px;
+    background-image: url("slike/old.jpg");
+    background-size: unset;
+    /* text-shadow: 2px 2px rgb(36, 138, 6); */
+    position: relative;
+    box-sizing: border-box;
+}
+.h_slike {
+    max-width: 100%;
+    width: 40%;
+    height: 60%;
+    border: 1px rgb(10, 10, 10) groove;
+    border-radius: 100%;
+    display: block;
+    margin: 0px auto 50px auto;
+}
+
+.cvetic2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 55px;
+}
+
+.cvetic {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 65px;
+    height: 55px;
+}
+.vrste{
+    font-size: 25px;
+    font-family: cursive, serif;
+    color: rgb(198, 219, 121);
+    text-shadow: 2px 1px rgb(16, 95, 49);
+    text-align: center;
+    display:block;
+}
+
+@media only screen and (min-width: 700px) {
+    
+    p {
+        font-size: 22px;
+        width: 50%;
+        padding: 45px 45px 54px 40px;
+        margin: auto;
+        margin-bottom: 3%;
+    }
+    .h_slike {
+        margin-block-start: 50px;
+         
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    p {
+        font-size: 17px;
+        width: 90%;
+        padding: 30px 56px 30px 46px;
+        margin: 20% auto 3% auto;
+    }
+    .h_slike {
+        margin-block-start: 10%;
+        width: 100%;
+    }
+}

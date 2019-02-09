@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'font1';
+    src: url('font/font1.ttf');
+}
+
+#onama {
+    margin-block-start: 102px;
+     position: relative;
+}
+
+#tekst {
+    margin: auto;
+    max-width: 70%;
+    padding-top: 2%;
+    
+}
+
+#tekst article {
+    background-image: url("slike/old.jpg");
+    background-size: cover;
+    border: black 1px groove;
+    border-radius: 15px;
+    width: 70%;
+    margin: 0 auto 2% auto;
+    z-index: 5;
+    
+   
+}
+
+#tekst p {
+    letter-spacing: 1px;
+    line-height: 1.1;
+    font-family: cursive, serif;
+    font-weight: 550;
+    text-align: left;
+     margin-bottom:1%;
+    margin: auto;
+   
+    
+}
+
+.cvetic2 {
+    position: absolute;
+
+}
+
+.cvetic {
+    position: absolute;
+    
+}
+
+@media only screen and (min-width: 700px) {
+    p {
+        font-size: 22px;
+        padding: 15px 15px 1px 15px;
+    }
+    .cvetic2 {
+        /* left: -17.5%;
+        bottom: 11%; */
+        bottom: 0;
+        right:74.5%;
+       
+    }
+    .cvetic {
+        /* right: -18%; */
+        /* top:21%; */
+        left:75%;
+        
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    p {
+        font-size: 16px;
+        width: 90%;
+        padding: 15px 10px;
+    }
+    .cvetic2 {
+        bottom:0.5%;
+        right:75%;
+       
+    }
+    .cvetic {
+        right:3.5%;
+        z-index: -2;
+    }
+}

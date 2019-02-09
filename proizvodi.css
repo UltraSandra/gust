@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'font1';
+    src: url('font/font1.ttf');
+}
+
+#proizvodi {
+    margin-block-start: 102px;
+}
+
+
+
+.omotac a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: cursive, serif;
+    color: rgb(198, 219, 121);
+    text-shadow: 1px 1px rgb(16, 95, 49);
+    display: block;
+    text-align: center;
+    
+}
+
+.omotac {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.p_svi {
+  margin-bottom: 2%;
+}
+
+.p_svi img{
+    max-width: 100%;
+    border: 1px peachpuff groove;
+}
+
+@media only screen and (min-width: 700px) {
+    
+    .omotac {
+        top: 10px;
+    }
+    .p_svi{
+         flex: 0 0 30%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .omotac {
+        top: 50px;
+    }
+    .p_svi{
+        flex: 100%;
+    }
+}

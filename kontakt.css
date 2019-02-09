@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'font1';
+    src: url('font/font1.ttf');
+}
+
+#kontakt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.flex {
+    flex: 0 0 20%;
+}
+
+#kontakt img {
+    width: 26%;
+    height: 20%;
+}
+
+ul {
+    padding-inline-start: 0px;
+    text-align: center;
+    font-weight: 550;
+    font-family: cursive, serif;
+    border: black 2px groove;
+    border-radius: 10px;
+    background-image: url('slike/oldnew.jpg');
+    background-size: cover;
+    /* text-shadow: 1px 1px rgb(36, 138, 6); */
+}
+
+li {
+    list-style: none;
+}
+
+.prodavnice {
+    margin-top: 130px;
+    text-align: center;
+    font-size: 21px;
+    padding: 30px 26px 30px 29px;
+    font-weight: 550;
+    font-family: cursive;
+    /* text-shadow: 1px 1px rgb(36, 138, 6); */
+}
+
+@media only screen and (min-width: 700px) {
+    ul {
+        font-size: 21px;
+        padding: 30px 26px 30px 29px;
+    }
+    
+        
+        
+    
+    
+}
+
+@media only screen and (max-width: 700px) {
+    ul {
+        font-size: 16px;
+        padding: 8px 15px 20px 1px;
+    }
+    
+
+    .flex{
+        flex-basis: 55%;
+    }
+
+    #kontakt img{
+        width: 270px;
+        height: 170px;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Путеришка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stil.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="h_svi.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="p_humus.css" />
+    <link rel="shortcut icon" href="slike/ikonica.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="slike/Logo.png" alt="logo" id="logo">
+        <div id="dugme" style="font-size: 25px">
+            <i class="fas fa-bars"></i>
+        </div>
+        <script>
+            $('#dugme').click(
+                function () {
+                    $("nav").css("display", "flex");
+                    $(".sadrzaj").css("margin-top", "280px");
+                }
+            );
+        </script>
+        <nav>
+            <a href="index.html">Гушт</a>
+            <a href="onama.html">О нама</a>
+            <a href="proizvodi.html">Производи</a>
+            <a href="kontakt.html">Контакт</a>
+        </nav>
+    </header>
+    <div class="sadrzaj">
+        <h1>
+            Путеришка
+        </h1>
+        <img src="slike/puteriske.JPG" alt="puteriske" class="h_slike">
+        <article>
+
+            <p> <img src="slike/cvet.png" alt="cvetic" class="cvetic">
+                Слани биљни намази који се састоје од морске соли, палмине масти и лимуновог сока, у 3 варијанте:
+                <img src="slike/cvet2.png" alt="cvetic2" class="cvetic2">
+            </p> 
+        </article>
+            <div class="omotac">
+                <div class="h_svi">
+                    <img src="slike/bademi.JPG" alt="bademi">
+                    <span class="vrste">Путеришка од бадема</span>
+                </div>
+                <div class="h_svi">
+                    <img src="slike/kikiriki_cokolada.JPG" alt="kikiriki_cokolada">
+                    <span class="vrste">Слатка путеришка од кикирикија са црном чоколадом</span>
+                </div>
+                <div class="h_svi">
+                    <img src="slike/indijski.jpg" alt="indijski_orah">
+                    <span class="vrste">Путеришка од индијског ораха</span>
+                </div>
+            </div>
+    </div>
+
+
+
+   
+    </div>
+</body>
+
+</html>
